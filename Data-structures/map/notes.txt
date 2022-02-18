@@ -1,0 +1,39 @@
+Methods:
+new Map() – creates the map.
+map.set(key, value) – stores the value by the key.
+map.get(key) – returns the value by the key, undefined if key doesn’t exist in map.
+map.has(key) – returns true if the key exists, false otherwise.
+map.delete(key) – removes the value by the key.
+map.clear() – removes everything from the map.
+map.size – returns the current element count.
+Map has a built-in forEach method, similar to Array:
+
+Dictionary
+A Dictionary is a data structure that stores key-value pairs. 
+In a sense, if you know a key for the item, you can use it to access it. 
+This is similar to Array and indexes relationship but dictionary items are stored differently. 
+Besides this similarity, a dictionary is much closer to a Set data structure than an Array.
+
+Map vs WeakMap
+Along with Map, Javascript also has WeakMap. 
+Its main difference is that it holds a weak reference to its items and the keys can only be objects, 
+any object, and that goes for functions and other WeakMap or Map as well. Because of this weak nature, 
+WeakMap is not iterable which also means you cannot access its size.
+The advantage of WeakMap is that it will not prevent the garbage collector from doing its job. With Map, 
+if it holds a reference to some object, even if you are not using that object, it will continue to be in 
+memory until you dispose of the Map. This is true for any object, Array, Set, etc.
+
+To put it simply, if you create object A and put it inside WeakMap and nothing else references it,
+the garbage collector will clear it from memory.
+WeakMap weak reference nature does not stop garbage collectors from clearing memory as other objects do.
+
+When to use WeakMap?
+WeakMap is perfect when memory is a concern. 
+If you are to hold reference of things that come to life and are cleared constantly,
+instead of collecting reference to them use WeakMap so they can be collected at an earlier convenient.
+WeakMap is notoriously used to prevent memory leaks.
+
+Conclusion
+The takeaway from this is, you should use Map more to manage key-value pair data instead of objects. 
+Use objects for small data exchange, JSON for network data exchange, and WeakMap to hold weak references to things.
+Map is powerful and so much better in every way as a data structure.
