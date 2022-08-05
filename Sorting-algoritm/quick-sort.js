@@ -24,8 +24,6 @@ function quickSort(array) {
   return [...quickSort(less), pivot, ...quickSort(greater)];
 }
 
-// console.log(quickSort(arrayQuick));
-
 // another example
 // function quickSort(arr) {
 //   if (arr.length < 2) return arr;

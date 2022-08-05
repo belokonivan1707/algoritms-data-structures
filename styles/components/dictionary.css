@@ -1,0 +1,7 @@
+.dictionary-card {
+    max-width: 300px;
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px 0px #999999;
+}

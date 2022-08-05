@@ -17,5 +17,3 @@ function selectionSort(array) {
 
   return array;
 }
-
-// console.log(selectionSort(arraySelection));
