@@ -1,15 +1,25 @@
 .hero-section {
     display: flex;
     width: 100%;
-    margin-bottom: 16px;
-}
-
-.hero-scetion-content-container {
-    width: 50%
+    font-size: 1rem;
+    margin-bottom: 2em;
 }
 
 .hero-scetion-content-box {
-  padding: 30px 60px;
+    width: 50%;
+    padding: 2em 4em;
+}
+
+.hero-section-title {
+    font-size: 3.5em;
+}
+
+.hero-scetion-second-title{
+    font-size: 2.5em;
+}
+
+.hero-scetion-description {
+    font-size: 1.5em;
 }
 
 .hero-scetion-wallpaper-container {
