@@ -6,6 +6,6 @@ html {
     html { font-size: 10px; }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     html { font-size: 6px; }
 }
