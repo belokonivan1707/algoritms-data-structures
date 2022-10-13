@@ -5,15 +5,20 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-  
 
-.body {
-    background-color: rgb(245, 245, 245);
+html {
+    font-size: 15px;
+    height: 100%;
+}
+
+body {
+    height: 100%;
 }
 
 .page-wrapper {
-    max-width: 1180px;
+    max-width: 980px;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     padding: 0 1rem;
 }
