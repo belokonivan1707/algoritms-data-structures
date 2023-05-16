@@ -1,1 +1,0 @@
-# search-and-sort-algoritms, study repository
