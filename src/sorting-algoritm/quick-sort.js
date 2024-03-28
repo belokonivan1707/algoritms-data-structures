@@ -1,10 +1,10 @@
 // const arrayQuick = [-1, 12, 23, 422, -3, 92, 23, 1, 5, 8, 2, 9, 12130, 182, 24, -17, 98, 45, 1];
 
-export function quickSort(array) {
+function quickSort(array) {
   if (array.length <= 1) {
     return array;
   }
-  
+
   let pivotIndex = Math.floor(array.length / 2);
   let pivot = array[pivotIndex];
   let less = [];
@@ -25,7 +25,7 @@ export function quickSort(array) {
 }
 
 // another example
-export function quickSort(arr) {
+function quickSort(arr) {
   if (arr.length < 2) return arr;
   let pivot = arr[0];
   const left = [];

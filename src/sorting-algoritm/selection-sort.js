@@ -1,6 +1,6 @@
 // const arraySelection = [-1, 12, 23, 422, -3, 92, 23, 1, 5, 8, 2, 9, 12130, 182, 24, -17, 98, 45, 1];
 
-export function selectionSort(array) {
+function selectionSort(array) {
   for (let i = 0; i < array.length; i++) {
     let indexMin = i;
 
